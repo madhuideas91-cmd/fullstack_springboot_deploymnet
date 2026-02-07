@@ -25,6 +25,6 @@ RUN npm install -g serve
 # Copy build output from build stage
 COPY --from=build /app/dist ./dist
 
-EXPOSE 3000
+EXPOSE 6000
 
-CMD ["serve", "-s", "dist", "-l", "3000"]
+CMD ["serve", "-s", "dist", "-l", "6000"]
