@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 function App() {
   const [message, setMessage] = useState("");
   useEffect(() => {
-    fetch("http://77.37.47.79:4000/api/message")
+    fetch("http://77.37.47.79:4100/api/message")
       .then((response) => response.json())
       .then((data) => setMessage(data.message))
       .catch((error) => console.error("Error fetching data:", "error"));
