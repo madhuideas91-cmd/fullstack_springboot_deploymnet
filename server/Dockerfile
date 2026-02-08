@@ -14,6 +14,6 @@ FROM maven:3.9.6-eclipse-temurin-17
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 
-EXPOSE 4000
+EXPOSE 4100
 
 ENTRYPOINT ["java", "-jar", "app.jar"]

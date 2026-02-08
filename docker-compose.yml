@@ -14,7 +14,7 @@ services:
     build: ./client/myapp
     container_name: react-client-spring
     ports:
-      - "6000:6000"
+      - "7001:6000"
     networks:
       - fullstack-net
     depends_on:
